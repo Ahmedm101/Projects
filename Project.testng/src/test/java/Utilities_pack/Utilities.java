@@ -22,27 +22,10 @@ public class Utilities {
       
 	public WebDriver driver;
   
-  @Parameters({"browser","urladdress"})
+ // @Parameters({"browser","urladdress"})
   @BeforeClass
-  public void beforeClass(String NameOftheBrowser, String Url) {
-	  String UD = System.getProperty("user.dir");
-	
-	if(NameOftheBrowser.equalsIgnoreCase("chrome")) {
-		System.setProperty("webdriver.chrome.driver",UD+"\\Drivers\\chromedriver.exe" );
-		driver = new ChromeDriver();
-		driver.get(Url);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	}
-	else if(NameOftheBrowser.equalsIgnoreCase("Edge")) {
-		
-		System.setProperty("webdriver.edge.driver", UD+"\\Drivers\\msedgedriver.exe");
-		driver= new EdgeDriver();
-		driver.get(Url);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	}
-
+  public void beforeClass() {
+	 BrowserInitialization("chrome", "https://www.amazon.com");
   }
   @AfterMethod
   public void afterMethod() throws IOException {
@@ -69,4 +52,24 @@ public class Utilities {
 			e.printStackTrace(); }
 
   }
+ 
+  public void BrowserInitialization(String NameOftheBrowser, String Url) {
+	  String UD = System.getProperty("user.dir");
+	
+	if(NameOftheBrowser.equalsIgnoreCase("chrome")) {
+		System.setProperty("webdriver.chrome.driver",UD+"\\Drivers\\chromedriver.exe" );
+		driver = new ChromeDriver();
+		driver.get(Url);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+	else if(NameOftheBrowser.equalsIgnoreCase("Edge")) {
+		
+		System.setProperty("webdriver.edge.driver", UD+"\\Drivers\\msedgedriver.exe");
+		driver= new EdgeDriver();
+		driver.get(Url);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+}
 }
