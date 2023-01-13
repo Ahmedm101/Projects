@@ -52,7 +52,7 @@ public class Utilities {
 
   @AfterClass
   public void afterClass() {
-	 // driver.close();    // do we always give close here or ss ??
+	  driver.quit();    // do we always give close here or ss ??
   }
   
   public void Screenshot(String folder) throws IOException {
@@ -69,5 +69,17 @@ public class Utilities {
 
   }
  
- 
+  public void screenshotOfScroll(String folder) throws IOException {
+	  String UD=System.getProperty("user.dir");
+		Date Dateformat = new Date();
+		String DATE =Dateformat.toString().replace(":","_").replace(" ","_");
+		
+		File SS =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileHandler.copy(SS,new File(UD+"\\Screenshots\\"+folder+"\\"+DATE+folder+".jpg"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace(); }
+
+  }
 }

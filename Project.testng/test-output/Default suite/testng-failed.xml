@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AmazonTestNG.Sprint1_Amazon">
+      <class name="AmazonTestNG.Sprint2_Amazon">
         <methods>
-          <include name="afterClass"/>
           <include name="Test1"/>
+          <include name="afterClass"/>
           <include name="afterMethod"/>
           <include name="BrowserInitialization"/>
         </methods>
-      </class> <!-- AmazonTestNG.Sprint1_Amazon -->
+      </class> <!-- AmazonTestNG.Sprint2_Amazon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
