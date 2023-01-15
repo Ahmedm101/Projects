@@ -15,14 +15,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Java_Script_Utilities.JS;
 
 public class AmazonHomepage2 {
-	WebDriver driver;
+	WebDriver driver;           // should i make this public or only utilities public is ok 
+	
 	@FindBy(xpath = "//div[@class='nav-line-1-container']/following-sibling::span") WebElement AccountandLists;
 	@FindBy(xpath="(//a[@id='nav_prefetch_yourorders']/following-sibling::a/child::span)[12]") WebElement Selling;
 	@FindBy(css="#searchDropdownBox") WebElement All;
 	@FindBy(css ="#twotabsearchtextbox") WebElement Searchfield;
 	@FindBy(css="i[class='hm-icon nav-sprite']+span") WebElement allSideMenu;
 //	@FindBy(xpath="//ul[@class='hmenu hmenu-visible hmenu-translateX']/descendant::a[text()='New Releases']") WebElement NewRealease;
-	@FindBy(xpath="(//ul[@class='hmenu hmenu-visible hmenu-translateX']/descendant::a)[2]") WebElement NewRealease;
+	@FindBy(xpath="(//a[text()='New Releases'])[2]") WebElement NewRealease;
 	
 	public void AccountandListsClick() {
 		WebDriverWait exwait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -43,7 +44,7 @@ public class AmazonHomepage2 {
 		All.click();
 		Select dropdown =new Select(All);
 		dropdown.selectByIndex(4);
-		
+	
 	}
 	//ff
 	  public void HomepagesearchfieldClick() {

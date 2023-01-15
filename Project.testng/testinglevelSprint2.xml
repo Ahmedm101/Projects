@@ -5,16 +5,14 @@
   <test thread-count="5" name="Testing level">
    <parameter name="browser" value="chrome"></parameter>
   <parameter name="urladdress" value="https://www.amazon.com"></parameter>
-  <groups>
-  <run>
-  
-  <include name="smoke"></include>
-  <include name="regression"></include>
-  <include name="sanity"></include>
-  
-  
-  </run>
-  </groups>
+      <groups>
+          <run>
+              <include name="smoke"></include>
+          
+          
+          </run>
+     
+      </groups>
  <classes>
       <class name="AmazonTestNG.Sprint2_Amazon"/>
     </classes>

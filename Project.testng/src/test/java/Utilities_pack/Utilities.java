@@ -20,7 +20,7 @@ import org.testng.annotations.AfterClass;
 
 public class Utilities {
       
-	public WebDriver driver;
+	public static WebDriver driver;
   
   @Parameters({"browser","urladdress"})
   @BeforeClass
@@ -52,7 +52,7 @@ public class Utilities {
 
   @AfterClass
   public void afterClass() {
-	  driver.quit();    // do we always give close here or ss ??
+	 // driver.quit();    // do we always give close here or ss ??
   }
   
   public void Screenshot(String folder) throws IOException {

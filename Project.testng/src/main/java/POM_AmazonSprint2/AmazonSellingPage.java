@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AmazonSellingPage {
 	
-     WebDriver driver;
+ public    WebDriver driver;
      
      @FindBy(css ="#twotabsearchtextbox") WebElement Searchfield;
      @FindBy(css="#nav-search-submit-button") WebElement SearchIcon;

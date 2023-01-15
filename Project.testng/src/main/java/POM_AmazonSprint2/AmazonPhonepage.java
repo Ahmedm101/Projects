@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AmazonPhonepage {
 
-	WebDriver driver;
+  public	WebDriver driver;
 	
 	
 	

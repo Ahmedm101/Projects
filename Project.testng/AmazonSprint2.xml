@@ -11,13 +11,13 @@
   </test> <!-- Test_of_AmazonSprint2 -->
   
 
-  <test thread-count="5" name="Test_of_AmazonSprint2 in edge">
+ <!-- <test thread-count="5" name="Test_of_AmazonSprint2 in edge">
   <parameter name="browser" value="edge"></parameter>
   <parameter name="urladdress" value="https://www.amazon.com"></parameter>
     <classes>
       <class name="AmazonTestNG.Sprint2_Amazon"/>
     </classes>
-  </test> <!-- Test_of_AmazonSprint2 -->
+  </test>  Test_of_AmazonSprint2 -->
 </suite> <!-- Suite -->
   
   

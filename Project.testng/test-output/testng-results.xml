@@ -2,7 +2,7 @@
 <testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-12T23:10:19 CST" name="Suite" finished-at="2023-01-12T23:10:19 CST" duration-ms="33">
+  <suite started-at="2023-01-14T17:36:02 CST" name="Suite" finished-at="2023-01-14T17:36:02 CST" duration-ms="37">
     <groups>
       <group name="regression">
         <method signature="Sprint2_Amazon.Test1()[pri:1, instance:AmazonTestNG.Sprint2_Amazon@1af2d44a]" name="Test1" class="AmazonTestNG.Sprint2_Amazon"/>
@@ -11,15 +11,15 @@
         <method signature="Sprint2_Amazon.Test1()[pri:1, instance:AmazonTestNG.Sprint2_Amazon@1af2d44a]" name="Test1" class="AmazonTestNG.Sprint2_Amazon"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-01-12T23:10:19 CST" name="Testing level" finished-at="2023-01-12T23:10:19 CST" duration-ms="33">
+    <test started-at="2023-01-14T17:36:02 CST" name="Testing level" finished-at="2023-01-14T17:36:02 CST" duration-ms="37">
       <class name="AmazonTestNG.Sprint2_Amazon">
-        <test-method signature="Test1()[pri:1, instance:AmazonTestNG.Sprint2_Amazon@1af2d44a]" started-at="2023-01-12T23:10:19 CST" name="Test1" finished-at="2023-01-12T23:10:19 CST" duration-ms="8" status="FAIL">
+        <test-method signature="Test1()[pri:1, instance:AmazonTestNG.Sprint2_Amazon@1af2d44a]" started-at="2023-01-14T17:36:02 CST" name="Test1" finished-at="2023-01-14T17:36:02 CST" duration-ms="5" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "AmazonTestNG.Sprint2_Amazon.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "AmazonTestNG.Sprint2_Amazon.driver" is null
 at AmazonTestNG.Sprint2_Amazon.Test1(Sprint2_Amazon.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)

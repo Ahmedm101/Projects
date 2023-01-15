@@ -20,8 +20,8 @@ import POM_AmazonSprint2.AmazonSellingPage;
 import Utilities_pack.Utilities;
 
 public class Sprint2_Amazon extends Utilities {
-  @Test(priority=1,groups= {"smoke","regression"})
-  public void Test1() {
+  @Test(priority=1,groups = {"smoke","regression"})
+  public void Test1() {  // will this name be test 1,2 anki they will tell us 
 	String UrlofHomapage=  driver.getCurrentUrl();
 	String FrsUrlofHomepage="https://www.amazon.com/";
 	SoftAssert ob = new SoftAssert();
@@ -37,9 +37,11 @@ public class Sprint2_Amazon extends Utilities {
 	String ParentID = it.next();
 	String ChildID =it.next();
 	driver.switchTo().window(ChildID);
+	
 	List<WebElement> allbtn =driver.findElements(By.tagName("div"));
 	int buttons =allbtn.size();
 	System.out.println(buttons);
+	
 	AmazonSellingPage sp = new AmazonSellingPage(driver);
 	sp.searchfieldClick("phone");
 	// m ---- i did action class here not in action method as I am copying "phone"
@@ -105,8 +107,8 @@ public class Sprint2_Amazon extends Utilities {
 	  mouse.keyDown(Keys.CONTROL).sendKeys("v").build().perform();
 	  mouse.keyUp(Keys.CONTROL).build().perform();
 	  hp.allSideMenuClick();
-	//  Thread.sleep(2000);
-	//  hp.newRealeaseClick();
+	Thread.sleep(2000);
+	  hp.newRealeaseClick();
 	  
 	  /*is there can be situation close the child-window then close the parent so how we do it with after method
 	   here on test close the child and move to the driver to parent and then close the parent with after method */
