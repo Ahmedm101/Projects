@@ -23,7 +23,7 @@ public class Utilities {
 	public static WebDriver driver;
   
   @Parameters({"browser","urladdress"})
-  @BeforeClass
+  @BeforeClass(alwaysRun =true)
   public void BrowserInitialization(String NameOftheBrowser, String Url) {
 	  String UD = System.getProperty("user.dir");
 	
@@ -43,10 +43,11 @@ public class Utilities {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}}
   
-  @AfterMethod
-  public void afterMethod() throws IOException {
+  @AfterMethod                                    //**
+  public void afterMethod() throws IOException {  // can i just make the name of the method screesnhot and give string here, but do i have to give parameter like
+	                                            //    beforeclass
 	 Screenshot("Amazon");  // how we will be making this available for other folder. As in we need to come and change the name here 
-	  
+	                        
   } 
   
 

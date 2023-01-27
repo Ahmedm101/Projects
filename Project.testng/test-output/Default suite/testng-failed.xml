@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AmazonTestNG.Sprint2_Amazon">
+      <class name="FacebookTestNG.FacebookSignInTest">
         <methods>
-          <include name="Test1"/>
           <include name="afterClass"/>
+          <include name="FbSignUp"/>
           <include name="afterMethod"/>
           <include name="BrowserInitialization"/>
         </methods>
-      </class> <!-- AmazonTestNG.Sprint2_Amazon -->
+      </class> <!-- FacebookTestNG.FacebookSignInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

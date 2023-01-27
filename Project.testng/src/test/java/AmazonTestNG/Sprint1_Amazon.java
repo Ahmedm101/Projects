@@ -12,8 +12,9 @@ import POM_AmazonSprint1.ComputerPage;
 import POM_AmazonSprint1.SellPage;
 import POM_AmazonSprint1.Today_Dealpage;
 import Utilities_pack.Utilities;
+import Utilities_pack.Utilities2;
 
-public class Sprint1_Amazon extends Utilities {
+public class Sprint1_Amazon extends Utilities2 {
 	
   @Test
   public void Test1() {

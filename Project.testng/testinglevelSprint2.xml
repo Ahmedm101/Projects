@@ -7,9 +7,9 @@
   <parameter name="urladdress" value="https://www.amazon.com"></parameter>
       <groups>
           <run>
-              <include name="smoke"></include>
-          
-          
+              <exclude name="smoke"></exclude>
+              <include name ="sanity"></include>
+              <include name ="regression"></include>
           </run>
      
       </groups>
@@ -20,4 +20,10 @@
 </suite> <!-- Suite -->
 
 
-<!-- problem is having here showing driver is null -->
+<!-- problem is having here showing driver is null has been fixed with the annotation is this needed for the grouping only,
+         and how about the screenshot do it need it 
+         do we always do grouping in one xml file ??
+         can you show me parameters of other methods like before class and after class if we need in future 
+         show the stackoverflow concept
+         overall understanding test cases under grouping,
+         if we dont givepririty and depend then it wont run sequencely and how about classes, for another class do we need to give dependeant of class 1 method-->

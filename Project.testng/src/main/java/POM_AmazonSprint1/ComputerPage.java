@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
 public class ComputerPage {
-	WebDriver driver;
+	WebDriver driver;  // should we make this default 
 	
 	@FindBy(xpath = "//a[text()='Sell']") WebElement Sell;
 	
