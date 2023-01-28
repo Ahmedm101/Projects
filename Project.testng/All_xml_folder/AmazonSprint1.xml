@@ -7,13 +7,13 @@
 
   </listeners>
 
- <!-- <test  name="Test_AmazonSprint1_Chrome">
+  <test  name="Test_AmazonSprint1_Chrome">
   <parameter name="browser" value="chrome"></parameter>
   <parameter name="urladdress" value="https://www.amazon.com"></parameter>
     <classes>
       <class name="AmazonTestNG.Sprint1_Amazon"/>
     </classes>
-  </test>  Test_AmazonSprint1 -->
+  </test>  
   
   <test name="Test_AmazonSprint1_edge">
   <parameter name="browser" value="edge"></parameter>
