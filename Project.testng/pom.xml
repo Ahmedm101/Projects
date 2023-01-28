@@ -84,10 +84,9 @@
           <version>3.0.0-M8</version>
           <configuration>
           <suiteXmlFiles>
-          <suiteXmlFile>${xmlSuiteFileName}</suiteXmlFile>
+          <suiteXmlFile>C:\Users\malih\git\repository3\Project.testng\All_xml_folder\AmazonSprint1.xml</suiteXmlFile>
           
           </suiteXmlFiles>
-          
           
           </configuration>
           
