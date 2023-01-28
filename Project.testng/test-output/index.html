@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,16 +130,15 @@
                   <a name="Test1">
                   </a> <!-- Test1 -->
                   <span class="method-name">Test1</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=109.0.1518.61)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@id=&apos;nav-subnav&apos;]/descendant::span)[2]&quot;}
+  (Session info: MicrosoftEdge=109.0.1518.69)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;LAPTOP-EDNQF8JN&apos;, ip: &apos;192.168.1.224&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f30409b10be7cab54f714a7b73a86d70, clickElement {id=8327f4ca-ad55-4b36-9612-3aa12c24a1e1}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.61, ms:edgeOptions: {debuggerAddress: localhost:65056}, msedge: {msedgedriverVersion: 108.0.1462.42 (952d9dd5b065..., userDataDir: C:\Users\malih\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65056/devtoo..., se:cdpVersion: 109.0.1518.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (f30409b10be7cab54f714a7b73a86d70)] -&gt; xpath: //a[text()=&apos;Sell&apos;]]
-Session ID: f30409b10be7cab54f714a7b73a86d70
+Command: [d6c4187ae056344604997e954afbdc3c, findElement {using=xpath, value=(//div[@id=&apos;nav-subnav&apos;]/descendant::span)[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.69, ms:edgeOptions: {debuggerAddress: localhost:62386}, msedge: {msedgedriverVersion: 108.0.1462.42 (952d9dd5b065..., userDataDir: C:\Users\malih\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62386/devtoo..., se:cdpVersion: 109.0.1518.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6c4187ae056344604997e954afbdc3c
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -147,18 +146,17 @@ Session ID: f30409b10be7cab54f714a7b73a86d70
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at POM_AmazonSprint1.ComputerPage.SellClick(ComputerPage.java:16)
-	at AmazonTestNG.Sprint1_Amazon.Test1(Sprint1_Amazon.java:32)
+	at POM_AmazonSprint1.Today_Dealpage.CouponClick(Today_Dealpage.java:13)
+	at AmazonTestNG.Sprint1_Amazon.Test1(Sprint1_Amazon.java:40)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 27 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -173,18 +171,11 @@ Session ID: f30409b10be7cab54f714a7b73a86d70
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;ListenersPack.IListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test_AmazonSprint1_Chrome&quot;&gt;
-    &lt;parameter name=&quot;urladdress&quot; value=&quot;https://www.amazon.com&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;AmazonTestNG.Sprint1_Amazon&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test_AmazonSprint1_Chrome --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test_AmazonSprint1_edge&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test_AmazonSprint1_edge&quot;&gt;
     &lt;parameter name=&quot;urladdress&quot; value=&quot;https://www.amazon.com&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
@@ -201,9 +192,6 @@ Session ID: f30409b10be7cab54f714a7b73a86d70
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">Test_AmazonSprint1_Chrome (1 class)</span>
-              </li>
               <li>
                 <span class="test-name">Test_AmazonSprint1_edge (1 class)</span>
               </li>
@@ -235,12 +223,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Test1')
 data.setCell(0, 2, 'AmazonTestNG.Sprint1_Amazon')
-data.setCell(0, 3, 5860);
+data.setCell(0, 3, 38046);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -268,10 +256,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">AmazonTestNG.Sprint1_Amazon</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">BrowserInitialization(chrome, https://www.amazon.com)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
                 <span class="method-name">BrowserInitialization(edge, https://www.amazon.com)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
@@ -279,17 +263,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Test1</span>
-                <span class="method-start">7018 ms</span>
+                <span class="method-start">8629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13181 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">15020 ms</span>
+                <span class="method-start">46978 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
