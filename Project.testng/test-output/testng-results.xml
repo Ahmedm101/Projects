@@ -1,97 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-28T12:58:46 CST" name="Default suite" finished-at="2023-01-28T12:58:46 CST" duration-ms="47">
+  <suite started-at="2023-02-03T01:55:51 CST" name="Default suite" finished-at="2023-02-03T01:55:54 CST" duration-ms="2496">
     <groups>
     </groups>
-    <test started-at="2023-01-28T12:58:46 CST" name="Default test" finished-at="2023-01-28T12:58:46 CST" duration-ms="47">
-      <class name="AmazonTestNG.Sprint1_Amazon">
-        <test-method is-config="true" signature="BrowserInitialization(java.lang.String,java.lang.String)[pri:0, instance:AmazonTestNG.Sprint1_Amazon@593aaf41]" started-at="2023-01-28T12:58:46 CST" name="BrowserInitialization" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1674932326636" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method BrowserInitialization but has not been marked @Optional or defined
-in C:\Users\malih\AppData\Local\Temp\testng-eclipse-1597610192\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method BrowserInitialization but has not been marked @Optional or defined
-in C:\Users\malih\AppData\Local\Temp\testng-eclipse-1597610192\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2023-02-03T01:55:51 CST" name="Default test" finished-at="2023-02-03T01:55:54 CST" duration-ms="2496">
+      <class name="ApiTestingRest_Assured.Aitestinrandomway">
+        <test-method signature="f()[pri:0, instance:ApiTestingRest_Assured.Aitestinrandomway@169e6180]" started-at="2023-02-03T01:55:51 CST" name="f" finished-at="2023-02-03T01:55:54 CST" duration-ms="2465" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrowserInitialization -->
-        <test-method signature="Test1()[pri:0, instance:AmazonTestNG.Sprint1_Amazon@593aaf41]" started-at="2023-01-28T12:58:46 CST" name="Test1" finished-at="2023-01-28T12:58:46 CST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method BrowserInitialization but has not been marked @Optional or defined
-in C:\Users\malih\AppData\Local\Temp\testng-eclipse-1597610192\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method BrowserInitialization but has not been marked @Optional or defined
-in C:\Users\malih\AppData\Local\Temp\testng-eclipse-1597610192\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AmazonTestNG.Sprint1_Amazon@593aaf41]" started-at="2023-01-28T12:58:46 CST" name="tearDown" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1674932326666" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- AmazonTestNG.Sprint1_Amazon -->
+        </test-method> <!-- f -->
+      </class> <!-- ApiTestingRest_Assured.Aitestinrandomway -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

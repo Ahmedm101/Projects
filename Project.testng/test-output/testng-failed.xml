@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AmazonTestNG.Sprint1_Amazon">
+      <class name="ApiTestingRest_Assured.Aitestinrandomway">
         <methods>
-          <include name="tearDown"/>
-          <include name="Test1"/>
-          <include name="BrowserInitialization"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- AmazonTestNG.Sprint1_Amazon -->
+      </class> <!-- ApiTestingRest_Assured.Aitestinrandomway -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
